@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestCookingTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRD-Zk-i3W">
+                                <rect key="frame" x="20" y="64" width="374" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="w65-LI-sih"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zaO-EJ-GfI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lvq-4E-fLv"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-oV-B9F">
+                                <rect key="frame" x="20" y="224" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="3R9-As-4Eh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="e8I-1c-LOn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="07f-8c-3zB"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-yX-8dz">
+                                <rect key="frame" x="20" y="584" width="374" height="258"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02p-cs-cgb">
+                                <rect key="frame" x="20" y="464" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bG8-0L-vl2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="d59-rb-yph"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Dn2-SS-HxO"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C2D-yX-8dz" firstAttribute="top" secondItem="02p-cs-cgb" secondAttribute="bottom" constant="20" id="5oN-WG-rRg"/>
+                            <constraint firstItem="FLZ-oV-B9F" firstAttribute="top" secondItem="VRD-Zk-i3W" secondAttribute="bottom" constant="40" id="CGe-eJ-JdA"/>
+                            <constraint firstItem="VRD-Zk-i3W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IRZ-C7-TLz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="02p-cs-cgb" secondAttribute="trailing" constant="20" id="P2U-BW-bke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C2D-yX-8dz" secondAttribute="bottom" constant="20" id="VAZ-k8-74t"/>
+                            <constraint firstItem="FLZ-oV-B9F" firstAttribute="leading" secondItem="VRD-Zk-i3W" secondAttribute="leading" id="W1I-aQ-DeU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2D-yX-8dz" secondAttribute="trailing" constant="20" id="f4O-eg-if8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VRD-Zk-i3W" secondAttribute="trailing" constant="20" id="hdc-26-ON2"/>
+                            <constraint firstItem="02p-cs-cgb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kwj-Nb-k8w"/>
+                            <constraint firstItem="FLZ-oV-B9F" firstAttribute="trailing" secondItem="VRD-Zk-i3W" secondAttribute="trailing" id="lDD-j8-jjq"/>
+                            <constraint firstItem="C2D-yX-8dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mUZ-te-ai1"/>
+                            <constraint firstItem="VRD-Zk-i3W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pd6-L7-jA4"/>
+                            <constraint firstItem="02p-cs-cgb" firstAttribute="top" secondItem="FLZ-oV-B9F" secondAttribute="bottom" constant="20" id="xzv-TY-weO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblInfo" destination="C2D-yX-8dz" id="HeQ-cw-Tko"/>
+                        <outlet property="pickerCut" destination="FLZ-oV-B9F" id="j1r-NT-AtZ"/>
+                        <outlet property="pickerMeat" destination="VRD-Zk-i3W" id="gro-5E-aHq"/>
+                        <outlet property="pickerWeight" destination="02p-cs-cgb" id="NC8-1a-0T8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
